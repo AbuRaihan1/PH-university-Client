@@ -1,4 +1,5 @@
 import { Layout, Menu } from "antd";
+import { Outlet } from "react-router-dom";
 const { Header, Content, Footer, Sider } = Layout;
 const MainLayout = () => {
   const items = [
@@ -67,7 +68,7 @@ const MainLayout = () => {
               //   borderRadius: borderRadiusLG,
             }}
           >
-            <h1>Main Content</h1>
+            <Outlet />
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
