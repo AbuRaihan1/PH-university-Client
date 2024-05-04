@@ -58,7 +58,7 @@ export const adminSidebarItem = adminPaths.reduce(
       acc.push({
         key: item.name,
         label: item.name,
-        children: item.children.map((child, idx) => ({
+        children: item.children.map((child) => ({
           key: child.name,
           label: <NavLink to={`/admin/${child.path}`}>{child.name}</NavLink>,
         })),
